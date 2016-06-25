@@ -1,0 +1,39 @@
+make a workspace folder: $ mkdir workspace
+
+Start rails project: rails new project_name
+
+adding database: (default) Gemfile
+
+Install bundle: bundle install
+
+Running the rails server on a local machine
+$ cd ~/workspace/hello_app/
+$ rails server
+
+{
+Running the rails server on a cloud IDE
+$ cd ~/workspace/hello_app/
+$ rails server -b $IP -p $PORT
+}
+
+create repository:
+1. git init
+2. git add -A
+3. git commit -m "first commit"
+4. (git remote add origin https://github.com/markemil/hello_app.git)
+5. git push -u origin master
+
+start coding
+
+git add -A
+git commit -m "Comment"
+git push origin master
+
+git log
+git status
+
+Scaffold:
+rails generate scaffold User name:string email:string
+
+Migrate for db:
+rake db:migrate
